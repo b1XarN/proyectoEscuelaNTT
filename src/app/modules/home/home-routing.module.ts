@@ -1,6 +1,5 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { ClientsTablePageComponent } from './pages/clients-table-page/clients-table-page.component';
 
 const routes: Routes = [
 
@@ -11,6 +10,14 @@ const routes: Routes = [
   {
     path: 'client', // http://localhost:4200/home/client
     loadChildren: () => import(`@modules/client/client.module`).then(m => m.ClientModule)
+  },
+  {
+    path: 'clients', // http://localhost:4200/home/client
+    loadChildren: () => import(`@modules/clients/clients.module`).then(m => m.ClientsModule)
+  },
+  {
+    path: '**',//TODO 404 cuando no existe la ruta
+    redirectTo: '/home/clients'
   }
 ];
 
