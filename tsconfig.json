@@ -21,7 +21,8 @@
       "@components/*": ["app/shared/*"],
       "@env/*": ["environment/*"],
       "@modules/*": ["app/modules/*"],
-      "@data/*": ["app/data/*"]
+      "@data/*": ["app/data/*"],
+      "@core/*": ["app/core/*"]
     },
     "lib": [
       "es2018",

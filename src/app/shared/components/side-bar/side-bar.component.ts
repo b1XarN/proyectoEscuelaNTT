@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
-import { OpcionesSideBar } from 'src/app/core/models/opciones-side-bar';
+import { OpcionesSideBar } from '@core/models/opciones-side-bar';
 
 @Component({
   selector: 'app-side-bar',
