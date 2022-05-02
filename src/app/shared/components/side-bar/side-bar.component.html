@@ -1,4 +1,11 @@
 <div class="side-bar">
-  <a href="http://localhost:4200/products">Products</a>
-  <a href="http://localhost:4200/client">Client</a>
+  <ul class="side-bar-list">
+    <li [routerLink]="item.router" class="side-bar-element" *ngFor="let item of opcionesArr">
+        <!-- <p>{{item | json}}</p> -->
+        <div class="list-item">
+            <i class="{{item.icon}}"></i>
+            <span class="list-label">{{item.name}}</span>
+        </div>
+    </li>
+  </ul>
 </div>

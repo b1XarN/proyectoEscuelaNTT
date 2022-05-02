@@ -1,10 +1,70 @@
 .header-user{
-  margin: 0 0 0 17.5rem;
-  min-width: 100%;
+  margin: 0 0 0 13.5rem;
+  width: 100%;
   position: fixed;
   top: 0;
-  background: rgb(23, 23, 26);
-  background: linear-gradient(90deg, rgba(23, 23, 26, 1) 44%, rgba(24, 24, 24, 1));
+  /* background: rgb(23, 23, 26); */
+  /* background: linear-gradient(90deg, rgba(23, 23, 26, 1) 44%, rgba(24, 24, 24, 1)); */
   min-height: 12vh;
   color: white;
+  padding: .5rem;
+
+}
+
+.header-container{
+
+  width: 85%;
+  height: 90%;
+  /* margin: 1rem; */
+  background-color: var(--color-blanco);
+  border-radius: 10px;
+  display: flex;
+  color: red;
+  flex-direction: row-reverse;
+
+}
+
+.user-data{
+
+  width: 20%;
+  /* background-color: blue; */
+  display: flex;
+  color: #000;
+  margin: 3px 20px;
+
+
+}
+
+.user-data-labels-container{
+  /* background-color: blueviolet; */
+
+  /*asdas*/
+}
+
+.user-data-label{
+
+  display: block;
+  /* background-color: greenyellow; */
+  font-size: 1rem;
+
+}
+
+.user-icon{
+
+  font-size: 60px;
+  /* margin-top: 190px; */
+  /* background-color: bisque; */
+
+}
+
+.user-data-icon-container{
+  /* background-color: yellow; */
+  padding-top: .1rem;
+}
+
+.user-data-label{
+
+  font-size: 1.1rem;
+  font-weight: bold;
+
 }
