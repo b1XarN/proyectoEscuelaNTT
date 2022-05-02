@@ -1,0 +1,17 @@
+<h1>Bienvenido</h1>
+<p>Gracias por volver a tu sitio favorito, por favor llenar el formulario</p>
+<div class="login-form-input">
+    <label>Email*:</label>
+    <input type="email" placeholder="Email" [(ngModel)]="loginForm.email.val" #email="ngModel">
+    <small class="bg-danger text-ligth mt-1 px-2 py-1 rounded" *ngIf="!loginForm.email.isValid() && email.touched">{{loginForm.email.error}}</small>
+</div>
+<div class="login-form-input">
+    <label>Contraseña*:</label>
+    <input type="password" placeholder="Contraseña" [(ngModel)]="loginForm.password.val" #password="ngModel">
+    <small class="bg-danger text-ligth mt-1 px-2 py-1 rounded" *ngIf="!loginForm.password.isValid() && password.touched">{{loginForm.password.error}}</small>
+</div>
+<small>Olvidé contraseña</small>
+<div class="login-form-buttons">
+    <button class="login-form-buttons__signup">Registrarse</button>
+    <button class="login-form-buttons__signin" [disabled]="!isValidForm" (click)="authenticate()">Iniciar Sesión</button>
+</div>
